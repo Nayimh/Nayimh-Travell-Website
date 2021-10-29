@@ -1,0 +1,40 @@
+.card-container{
+    width: 22rem;
+    height: 30rem;
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 30px lightgray;
+    border-radius: 3px;
+   
+}
+.card-container:hover{
+    box-shadow: 1px 1px 60px gray;
+}
+
+
+.service-img img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.card-text{
+    width: 90%;
+    margin: auto;
+}
+
+.card-btn{
+    border-style: none;
+    background-color: tomato;
+    color: white;
+    letter-spacing: 0.5px;
+    padding: 4px 10px 4px 10px;
+    border-radius: 3px;
+}
+
+.card-btn:hover{
+    background-color: white;
+    color: black;
+    text-align: tomato;
+    border: 1px solid tomato
+}

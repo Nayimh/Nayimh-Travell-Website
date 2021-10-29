@@ -1,10 +1,29 @@
 import React from 'react';
-
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import { HashLink } from 'react-router-hash-link';
+import './Header.css'
+// as={HashLink} to
 const Header = () => {
     return (
-        <div>
-            <h2>This is Header.</h2>
-        </div>
+        <Navbar bg="dark" variant="dark" sticky="top" expand="lg" >
+        <Container>
+                <Navbar.Brand href="#home"><span className="green">Evergreen</span> <span className="tomtato">Tarvel</span></Navbar.Brand>
+                <Navbar.Toggle />
+                <Navbar.Collapse className="justify-content-end">
+                <Nav className="me-auto">
+          <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
+          <Nav.Link as={HashLink} to="/packages#package">packages</Nav.Link>
+          <Nav.Link as={HashLink} to="/aboutUs">About Us</Nav.Link>
+          <Nav.Link as={HashLink} to="/guide">Guide</Nav.Link>
+          <Nav.Link as={HashLink} to="/contactUs">Contact Us</Nav.Link>
+        </Nav>
+      <Navbar.Text>
+        Signed in as: <a href="#login">Mark Otto</a>
+      </Navbar.Text>
+    </Navbar.Collapse>
+        
+      </Container>
+    </Navbar>   
     );
 };
 
