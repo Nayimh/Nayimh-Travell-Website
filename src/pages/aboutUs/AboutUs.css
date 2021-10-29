@@ -1,0 +1,26 @@
+.aboutus{
+    min-height: 100vh;
+}
+
+.about-Container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.about-Container img{
+    width: 100%;
+   
+    object-fit: cover;
+}
+
+.aboutUs-text{
+    letter-spacing: 2px;
+    line-height: 30px;
+    padding: 1rem;
+    background-color: rgb(250, 219, 209);
+}
+
+.aboutUs-text h2{
+    color: tomato;
+}

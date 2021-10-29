@@ -18,7 +18,7 @@ const Banner = () => {
     />
     <Carousel.Caption>
       <h3>The best view comes after the hardest climb</h3>
-      <h5>“Climb the mountains and get their good tidings. Nature’s peace will flow into you as sunshine flows into trees.”</h5>
+      <h5>Flying in smooth weather on a paraglider can be surprisingly calm and relaxing.</h5>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -42,7 +42,8 @@ const Banner = () => {
 
     <Carousel.Caption>
       <h3>Paragliding takes an adventure through life</h3>
-      <h5>Flying in smooth weather on a paraglider can be surprisingly calm and relaxing.</h5>
+      
+      <h5>“Climb the mountains and get their good tidings. Nature’s peace will flow into you as sunshine flows into trees.”</h5>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>

@@ -21,3 +21,6 @@ function App() {
 }
 
 export default App;
+
+// Discover your next favorite destination
+// Get inspired from guides around the world — with expert tips and recommendations from the Wanderlog community.

@@ -6,16 +6,17 @@
     letter-spacing: 3px;
 }
 
-/* .parent-card{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: auto;
-    
-} */
 
 
-/* media query */
+.background{
+    background-color: tomato;
+    color: white;
+    padding: 2rem;
+}
 
+.specing{
+    letter-spacing: 2px;
+}
 
 
 
