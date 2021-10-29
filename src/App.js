@@ -3,24 +3,31 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
+
+import Booking from './pages/Booking/Booking';
 import Error from './pages/Error/Error';
 import Footer from './pages/Footer/Footer';
-import Guide from './pages/guide/Guide';
+
 import Home from './pages/Home/Home';
+import Login from './pages/Login/Login';
 import Header from './pages/Shared/Header/Header';
 
 
 function App() {
   return (
     <div className="App">
+      
       <Router>
         <Header></Header>
         <Switch>
           <Route path="/home">
         <Home></Home>
           </Route>
-          <Route path="/guide">
-            <Guide></Guide>
+          <Route path="/book/:bookingId">
+        <Booking></Booking>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
           </Route>
           <Route exact path="/">
           <Home></Home>
@@ -31,6 +38,7 @@ function App() {
         </Switch>
         <Footer></Footer>
      </Router>
+     
     </div>
   );
 }

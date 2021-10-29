@@ -4,7 +4,9 @@ import aboutImg from '../../images/about/about.jpg'
 const Aboutus = () => {
     return (
         <div id="about" className="aboutus my-5">
-            <h1 className="text-black specing">who we are?</h1>
+            <hr className="w-75 mx-auto text-danger"/>
+            <h1 className=" specing  tomtato">who we are?</h1>
+            <hr className="w-75 mx-auto text-danger"/>
             <div className="about-Container  mx-auto my-5">
                 <div className="mb-5">
                     <img src={aboutImg} alt="" />

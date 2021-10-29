@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Package.css'
 
 const Package = (props) => {
-    const { name, Price, description, image, duration } = props.package;
+    const { name, Price, description, image, duration, key } = props.package;
     return (
         <div className=" card-container my-5 mx-auto">
          
@@ -17,7 +18,7 @@ const Package = (props) => {
                 <p>{ description }</p>
                 
             </div>
-            <button className="card-btn">Book Now</button>
+            <Link to={`/book/${key}`}><button className="card-btn">Book Now</button></Link>
             </div>
         </div>
     );

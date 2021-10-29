@@ -5,3 +5,7 @@
 .tomtato{
     color: tomato;
 }
+
+.logo{
+    cursor: pointer;
+}

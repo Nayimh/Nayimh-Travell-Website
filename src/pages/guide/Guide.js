@@ -14,7 +14,7 @@ const Guide = () => {
 
 
     return (
-        <div className="guide-container mt-5 text-black">
+        <div id="guide" className="guide-container mt-5 text-black">
             <h2>Our Guides</h2>
             <div className="g-color">
             <h4 className="my-2 text-container">Discover your next favorite destination</h4>
