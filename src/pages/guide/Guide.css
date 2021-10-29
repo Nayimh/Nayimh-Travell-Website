@@ -1,0 +1,12 @@
+.guide-container{
+    min-height: 100vh;
+    width: 90%;
+    margin: auto;
+}
+
+.g-color{
+    background-color: coral;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}

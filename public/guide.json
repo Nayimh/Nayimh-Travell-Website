@@ -3,6 +3,8 @@
         "key": 1,
         "name": "Carl Smith",
         "Experience": "5 Years",
+        "expert": "Traveller and Driver",
+
         "image": "https://i.ibb.co/9YKNhjK/A-fit-black-man-with-a-beard-standing-outdoors-in-a-city-area.jpg",
         "age": 34
     },
@@ -10,6 +12,7 @@
         "key": 2,
         "name": "Crish",
         "Experience": "4 Years",
+        "expert": "Traveller and Driver",
         "image": "https://i.ibb.co/phMm77Z/Portrait-of-happy-young-man-in-casual-clothing-looking-at-camera-outdoor-Smiling-man-with-beard-feel.jpg",
         "age": 31
     },
@@ -17,6 +20,7 @@
         "key": 3,
         "name": "James",
         "Experience": "6 Years",
+        "expert": "Traveller and Driver",
         "image": "https://i.ibb.co/qB7kxT8/g1.jpg",
         "age": 29
     }
