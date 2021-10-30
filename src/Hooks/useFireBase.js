@@ -6,7 +6,7 @@ initializeAuthentication();
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
-    
+    const [isLoading, setIsloading] = useState(true);
 
     const auth = getAuth();
 
@@ -29,9 +29,13 @@ const useFirebase = () => {
     useEffect(() => {
         onAuthStateChanged(auth, user => {
             if (user) {
-                console.log(user)
+                
                 setUser(user)
             }
+            else {
+                setUser({});
+            }
+            setIsloading(false)
         })
     }, []);
     
@@ -41,7 +45,8 @@ const useFirebase = () => {
         user,
         
         signInUsingGoogle,
-        logOut
+        logOut,
+        isLoading
     }
 
 }

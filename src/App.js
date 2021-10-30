@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
 import AuthProvider from './context/AuthProvider';
+import Adservice from './pages/Addservice/Adservice';
 
 import Booking from './pages/Booking/Booking';
 import Error from './pages/Error/Error';
@@ -11,6 +12,8 @@ import Footer from './pages/Footer/Footer';
 
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
+import ManageAllOrder from './pages/ManageAllOrder/ManageAllOrder';
+import MyOreder from './pages/MyOrder/MyOreder';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import Header from './pages/Shared/Header/Header';
 
@@ -33,7 +36,15 @@ function App() {
           <Route path="/Login">
             <Login></Login>
           </Route>
-          
+            <Route path="/addservice">
+              <Adservice></Adservice>
+          </Route>
+            <Route path="/myOrder">
+              <MyOreder></MyOreder>
+          </Route>
+            <Route path="/manageOrder">
+              <ManageAllOrder></ManageAllOrder>
+          </Route>
           <Route exact path="/">
           <Home></Home>
           </Route>

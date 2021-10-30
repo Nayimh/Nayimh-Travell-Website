@@ -10,9 +10,12 @@ const Booking = () => {
     const [detail, setDetail] = useState({});
 
     useEffect(() => {
-        fetch('/Services.json')
+        fetch('https://damp-plains-34194.herokuapp.com/package')
             .then(res => res.json())
-            .then(data => setDetails(data))
+            .then(data => {
+                
+                setDetails(data)
+            })
     }, [])
     
     
@@ -42,7 +45,7 @@ const Booking = () => {
                     <p>Package: ${detail?.Price}</p>
                     <p>{detail?.description}</p>
                     </div>
-                   <Link to="/home#services"> <button className="card-btn">Go Back</button></Link>
+                   <Link to="/home#home"> <button className="card-btn">Go Back</button></Link>
                 
             </div>
             

@@ -6,7 +6,7 @@ const Packages = () => {
     const [packages, setPackages] = useState([]);
 
     useEffect(() => {
-        fetch('./Services.json')
+        fetch('https://damp-plains-34194.herokuapp.com/package')
             .then(res => res.json())
             .then(data => setPackages(data))
     } , [])

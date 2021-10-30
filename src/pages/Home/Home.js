@@ -8,7 +8,7 @@ import Banner from '../Shared/banner/Banner';
 
 const Home = () => {
     return (
-        <div>
+        <div id="home">
            
             <Banner></Banner>
             <Packages></Packages>
