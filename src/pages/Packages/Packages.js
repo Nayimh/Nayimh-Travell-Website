@@ -20,7 +20,7 @@ const Packages = () => {
                 
             </div>
             <h1 className="text-black specing" >Our Packages</h1>
-            <div className="row  my-2 parent-card ">
+            <div className=" container row  my-2 parent-card ">
             {
                 packages.map(service => <Package
                     key={service?._id}
