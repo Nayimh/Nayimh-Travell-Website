@@ -23,7 +23,7 @@ const Packages = () => {
             <div className="row  my-2 parent-card ">
             {
                 packages.map(service => <Package
-                    key={service?.key}
+                    key={service?._id}
                     package={service}
                 ></Package>)
             }

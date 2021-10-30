@@ -18,14 +18,10 @@ const Booking = () => {
             })
     }, [])
     
-    
-    // useEffect(() => {
-    //     const foundDetails = details.find(detail => detail.id=== parseInt(bookingId))
-    //     setDetail(foundDetails)
-    // }, [details]);
-
+   
+   
     useEffect(() => {
-        const foundDetails = details.find(detail => detail.key === parseInt(bookingId))
+        const foundDetails = details.find(detail => detail._id === bookingId)
         setDetail(foundDetails)
     } , [bookingId, details])
   

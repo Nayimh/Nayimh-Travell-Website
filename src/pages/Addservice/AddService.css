@@ -17,6 +17,6 @@
    
 }
 
-.adservice .form input{
+.adservice .form input, textarea{
     margin: 10px;
 }

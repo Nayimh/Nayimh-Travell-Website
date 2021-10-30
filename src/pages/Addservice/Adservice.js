@@ -23,11 +23,11 @@ const Adservice = () => {
             <h1 className="text-black">Add New Service</h1>
             <form className="form" onSubmit={handleSubmit(onSubmit)}>
                 <input {...register("name")} placeholder="name"/>
-                <input {...register("Package")} placeholder="Package Duration"/>
+                <input {...register("duration")} placeholder="Package Duration"/>
                 <input type="number" {...register("Price")} placeholder="Price"/>
                 
       <input {...register("image")} placeholder="Image Url"/>
-      <input {...register("description")} placeholder="Description"/>
+      <textarea {...register("description")} placeholder="Description"/>
       <input className="bg-danger" type="submit" />
     </form>
         </div>
