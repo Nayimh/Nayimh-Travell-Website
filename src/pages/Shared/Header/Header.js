@@ -33,15 +33,18 @@ const Header = () => {
 </Nav>
 <Nav>
   
-  <Nav.Link as={HashLink} to="/login">LogIn</Nav.Link>
+  
             
   <Nav.Link eventKey={2}>Signed in as:   
              
                
                 { user?.displayName ? user?.displayName : user?.email}  
             </Nav.Link>
-            {user?.email &&
-              <Nav.Link as={HashLink} to="/Login"><button onClick={logOut} className="btn-danger text-white">Logout</button></Nav.Link>}
+            {user?.email ?
+                <Nav.Link as={HashLink} to="/Login"><button onClick={logOut} className="btn-danger text-white">Logout</button></Nav.Link>
+                :
+                <Nav.Link as={HashLink} to="/login">LogIn</Nav.Link>
+              }
 </Nav>
 </Navbar.Collapse>
 </Container>
