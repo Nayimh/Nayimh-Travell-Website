@@ -12,7 +12,7 @@ const MyOreder = () => {
       fetch(`https://damp-plains-34194.herokuapp.com/orders/${user.email}`)
         .then((res) => res.json())
         .then((data) => setOrders(data));
-    }, [orders]);
+    }, [user.email]);
 
     const handleDelete = (id) => {
         const confirm = window.confirm("Are you sure, you wanna delete this?");
@@ -49,7 +49,7 @@ const MyOreder = () => {
                   </Card.Title>
                           <Card.Text>{order?.desc}</Card.Text>
                           <button
-                  className="btn-primary border-0 fs-5 py-1 rounded-1 px-5"
+                  className="btn-danger border-0 fs-5 py-1 rounded-1 px-5"
                   onClick={() => handleDelete(order._id)}
                 >
                   Delete
